@@ -105,4 +105,8 @@ logger = base_logger.patch(fix_log_position)
 # -------------------------- 测试代码（验证修复效果） --------------------------
 if __name__ == '__main__':
     logger.info("【测试】logger.py内部调用（仅测试，业务模块调用会显示正确文件名）")
+    logger.debug("【测试】debug")
+    logger.info("【测试】info")
+    logger.warning("【测试】warning")
+    logger.error("【测试】error")
     print(f"日志文件输出路径：{LOG_FILE_PATH}")
